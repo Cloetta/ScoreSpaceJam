@@ -2973,3 +2973,7 @@ Received Import Request.
   path: Assets/Mike/tileset_311.asset
   artifactKey: Guid(c05d68a046c2c7640b659103e163e4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Mike/tileset_311.asset using Guid(c05d68a046c2c7640b659103e163e4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80e865901f6c398c7533df8c42a197a') in 0.014001 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
