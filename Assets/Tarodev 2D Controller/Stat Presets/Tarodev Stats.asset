@@ -31,7 +31,7 @@ MonoBehaviour:
   GroundingForce: -1.5
   StickyFeetMultiplier: 2
   GrounderDistance: 0.05
-  AllowCrouching: 1
+  AllowCrouching: 0
   CrouchSpeedPenalty: 0.5
   CrouchSlowdownFrames: 50
   CrouchBufferCheck: 0.01
@@ -47,7 +47,7 @@ MonoBehaviour:
   WallClimbSpeed: 5
   WallFallAcceleration: 8
   MaxWallFallSpeed: 15
-  WallJumpPower: {x: 30, y: 25}
+  WallJumpPower: {x: 25, y: 25}
   WallJumpInputLossFrames: 18
   WallJumpCoyoteFrames: 5
   WallDetectorSize: {x: 0.75, y: 1.25}
@@ -69,8 +69,9 @@ MonoBehaviour:
   AllowDash: 1
   DashVelocity: 50
   DashDurationFrames: 5
+  DashCooldown: 1.5
   DashEndHorizontalMultiplier: 0.25
-  AllowAttacks: 1
+  AllowAttacks: 0
   AttackFrameCooldown: 15
   ExternalVelocityDecay: 100
   ShowWallDetection: 1
