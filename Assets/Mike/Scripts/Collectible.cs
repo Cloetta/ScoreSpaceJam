@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml;
+using TarodevController;
 using UnityEngine;
 
 public class Collectible : MonoBehaviour
@@ -9,6 +9,8 @@ public class Collectible : MonoBehaviour
 
     [SerializeField]
     Items item;
+    //[SerializeField]
+    //PlayerController player; //keep this to refer to player stats for buffs and debuffs
 
     void Update()
     {
@@ -20,6 +22,8 @@ public class Collectible : MonoBehaviour
 
             Destroy(this.gameObject, 2.5f);
         }
+
+
     }
 
 
@@ -48,18 +52,25 @@ public class Collectible : MonoBehaviour
     {
         CameraMove cameraMove = FindObjectOfType<CameraMove>();
 
+        //Add other buffs/debuff types here with temp values holders
+
         float tempSpeedHolder = cameraMove.moveSpeed;
 
         cameraMove.moveSpeed *= item.boostMultiplier; //speed of the camera is halved.
 
         Debug.Log("cameraspeed buff applied: " + cameraMove.moveSpeed);
 
-        //Buff for 3 seconds
+
         yield return new WaitForSeconds(item.buffDuration);
 
         cameraMove.moveSpeed = tempSpeedHolder;
 
+        //restore original values here
+
         Debug.Log("cameraspeed buff ended: " + cameraMove.moveSpeed);
     }
 
+
+    //buff ideas: boost on jump power
+    //defbuffs: 
 }
