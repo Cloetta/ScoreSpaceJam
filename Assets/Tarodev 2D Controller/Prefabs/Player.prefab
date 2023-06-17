@@ -14974,6 +14974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveParticles: {fileID: 3836054527605825648}
   _tiltChangeSpeed: 0.05
+  _maxTiltAngle: 45
   _footstepClips:
   - {fileID: 8300000, guid: 2113f34717365ed4d9616fe3402bd43c, type: 3}
   - {fileID: 8300000, guid: 3db7790641583ba4ca4fc1fe33ed2fb3, type: 3}
@@ -14994,6 +14995,7 @@ MonoBehaviour:
   _dashRingParticles: {fileID: 3836054527679373923}
   _dashRingTransform: {fileID: 3836054526686142377}
   _minImpactForce: 20
+  _maxImpactForce: 40
   _landAnimDuration: 0.1
   _landClip: {fileID: 8300000, guid: f2433d011280e17498820544628ee930, type: 3}
   _jumpClip: {fileID: 8300000, guid: 101dc2feac7449645b4a53d89f9541f9, type: 3}
@@ -15059,7 +15061,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &3836054527376998749
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15076,7 +15078,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &3836054527376998747
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29834,7 +29837,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3836054527727189976}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
