@@ -16,7 +16,7 @@ public class GameOver : MonoBehaviour
 
     [SerializeField]
     GameObject gameOverPanel;
-   
+
     Plane[] planes;
 
     void Update()
@@ -53,14 +53,21 @@ public class GameOver : MonoBehaviour
 
         if (GeometryUtility.TestPlanesAABB(planes, objCollider.bounds))
         {
-            //Nothing happens, still in game!           
+            //Nothing happens, still in game, within the range of the camera!
+
             return false;
         }
         else
         {
-            //GameOver
-            Debug.Log("Player out of field! Game over!");
-            return true;
+            if ((player.transform.position.y - cam.transform.position.y) <= -11.5f)
+            {
+                //GameOver
+                Debug.Log("Player out of field! Game over!");
+                return true;
+            }
+
+            //Nothing happens, still in game, the player is above the camera
+            return false;
 
         }
     }

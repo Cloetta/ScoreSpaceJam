@@ -14,7 +14,11 @@ public class Collectible : MonoBehaviour
     {
         if (isPicked)
         {
-            Destroy(this.gameObject);
+            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+
+            spriteRenderer.enabled = false;
+
+            Destroy(this.gameObject, 2.5f);
         }
     }
 
@@ -23,11 +27,16 @@ public class Collectible : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            isPicked = true;
 
-            StartCoroutine(BuffEffect());
+            if (isPicked == false)
+            {
+                StartCoroutine(BuffEffect());
 
-            item.TriggerEffect();
+                item.TriggerEffect();
+
+                isPicked = true;
+            }
+
         }
 
     }
@@ -46,7 +55,7 @@ public class Collectible : MonoBehaviour
         Debug.Log("cameraspeed buff applied: " + cameraMove.moveSpeed);
 
         //Buff for 3 seconds
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.0f);
 
         cameraMove.moveSpeed = tempSpeedHolder;
 
