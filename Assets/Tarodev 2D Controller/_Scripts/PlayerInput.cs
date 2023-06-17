@@ -41,8 +41,8 @@ namespace TarodevController {
 #elif ENABLE_LEGACY_INPUT_MANAGER
         private FrameInput Gather() {
             return new FrameInput {
-                JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.C),
-                JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.C),
+                JumpDown = Input.GetButtonDown("Jump") || Input.GetMouseButton(0),
+                JumpHeld = Input.GetButton("Jump") || Input.GetMouseButton(0),
                 DashDown = Input.GetKeyDown(KeyCode.X),
                 AttackDown = Input.GetKeyDown(KeyCode.Z),
                 Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")),
