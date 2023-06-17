@@ -55,7 +55,7 @@ public class Collectible : MonoBehaviour
         Debug.Log("cameraspeed buff applied: " + cameraMove.moveSpeed);
 
         //Buff for 3 seconds
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(item.buffDuration);
 
         cameraMove.moveSpeed = tempSpeedHolder;
 

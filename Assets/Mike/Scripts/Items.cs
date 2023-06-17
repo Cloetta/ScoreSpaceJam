@@ -8,8 +8,9 @@ public class Items : ScriptableObject
     public string itemName = "";
     public int pointsAmount = 0;
     public float boostMultiplier = 1;
+    public float buffDuration = 0;
 
-   public virtual void TriggerEffect()
+    public virtual void TriggerEffect()
    {
         Debug.Log("Using " + itemName);
 

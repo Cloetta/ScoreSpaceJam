@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: CameraSlow
   pointsAmount: 0
   boostMultiplier: 0.5
+  buffDuration: 2

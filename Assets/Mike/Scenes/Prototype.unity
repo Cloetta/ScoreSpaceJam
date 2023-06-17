@@ -4427,6 +4427,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  scoreHolder: {fileID: 96952152}
+  player: {fileID: 1956354607}
+  pointsAmountEachDifficultyIncrease: 100
+  speedIncrease: 0.25
 --- !u!114 &1942711471
 MonoBehaviour:
   m_ObjectHideFlags: 0

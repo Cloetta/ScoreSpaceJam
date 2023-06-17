@@ -65,6 +65,13 @@ public class GameOver : MonoBehaviour
                 Debug.Log("Player out of field! Game over!");
                 return true;
             }
+            else if ((player.transform.position.y - cam.transform.position.y) >= 9.5f)
+            {
+                float camY = cam.transform.position.y;
+                Vector3 newCamPos = new Vector3(cam.transform.position.x, camY, cam.transform.position.z);
+                transform.Translate(newCamPos * 6.5f * Time.deltaTime);
+
+            }
 
             //Nothing happens, still in game, the player is above the camera
             return false;
