@@ -7,10 +7,17 @@ public class Collectible : MonoBehaviour
 {
     public bool isPicked = false;
 
+    public AudioSource Source;
+
     [SerializeField]
     Items item;
     //[SerializeField]
     //PlayerController player; //keep this to refer to player stats for buffs and debuffs
+
+    private void Start()
+    {
+        Source = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -31,6 +38,8 @@ public class Collectible : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+
+            Source.Play();
 
             if (isPicked == false)
             {

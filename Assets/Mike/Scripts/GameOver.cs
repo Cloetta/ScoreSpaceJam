@@ -30,10 +30,15 @@ public class GameOver : MonoBehaviour
             //Activate pop-up window with score and playagain button
             gameOverPanel.SetActive(true);
 
-        }
+                    }
         else
         {
             Time.timeScale = 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && gameOverPanel.activeSelf)
+        {
+            PlayAgain();
         }
 
     }
