@@ -149,6 +149,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPicked: 0
   Source: {fileID: 0}
+  possibleEffects: []
+  effectIconPrefab: {fileID: 4729232820574219488, guid: dc5371e48bff9dd4b9b4ab57b02ec2d3, type: 3}
+  effectBar: {fileID: 0}
   item: {fileID: 11400000, guid: a7fd35cb2d67b3247ba67e27b41ec166, type: 2}
 --- !u!82 &652857007
 AudioSource:

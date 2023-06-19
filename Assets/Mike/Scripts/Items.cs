@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Item")]
 public class Items : ScriptableObject
 {
     public string itemName = "";
-    public int pointsAmount = 0;
-    public float boostMultiplier = 1;
-    public float buffDuration = 0;
+    [HideInInspector] public int pointsAmount = 0;
+    [HideInInspector] public float boostMultiplier = 1;
+    [HideInInspector] public float duration = 0;
+    [HideInInspector] public bool hasEffects;
+    [HideInInspector] public EffectType effectType;
+    [HideInInspector] public string tooltip = "";
+    [HideInInspector] public Sprite icon;
 
-    public virtual void TriggerEffect()
+
+    public virtual void ApplyPoints()
     {
-        Debug.Log("Using " + itemName);
 
         //Add-subtract points to score (score from another script + pointsAmount)
         ScoreHolder scoreHolder = FindObjectOfType<ScoreHolder>();
@@ -27,6 +32,21 @@ public class Items : ScriptableObject
 
     }
 
+    public enum EffectType
+    {
+        Default,
+        CameraSpeed,
+        JumpForceChange,
+        MaxJumpsChange,
+        PlayerSpeedChange
+
+    }
+
+    public string DefineContent()
+    {
+        string content = tooltip;
+        return content;
+    }
 
 
 }

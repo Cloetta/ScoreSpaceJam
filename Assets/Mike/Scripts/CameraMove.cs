@@ -29,7 +29,18 @@ public class CameraMove : CinemachineExtension
         if (stage == CinemachineCore.Stage.Finalize)
         {
             var pos = state.RawPosition;
-            pos.y = transform.position.y;
+            float Ydiff = player.transform.position.y - transform.position.y;
+
+            if (Ydiff >= 9.5f)
+            {
+                pos.y = Mathf.Lerp(transform.position.y, player.transform.position.y, Time.deltaTime * 0.5f);
+
+            }
+            else
+            {
+                pos.y = transform.position.y;
+            }
+
             state.RawPosition = pos;
         }
     }
@@ -43,7 +54,7 @@ public class CameraMove : CinemachineExtension
 
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         //UpdatingCameraSpeedByScore();
 
@@ -58,16 +69,12 @@ public class CameraMove : CinemachineExtension
 
         // Move the camera upwards based on the moveSpeed and the elapsed time since the last frame
         transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
+
+        /*float camY = cam.transform.position.y;
+                Vector3 newCamPosY = new Vector3(cam.transform.position.x, camY, cam.transform.position.z);
+                transform.Translate(newCamPosY * 3.5f * Time.deltaTime);*/
+
         Debug.Log(moveSpeed);
     }
 
-
-
-    private void UpdateCameraSpeedByTime()
-    {
-
-
-
-
-    }
 }

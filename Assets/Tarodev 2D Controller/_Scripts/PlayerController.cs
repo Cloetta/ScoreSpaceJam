@@ -6,7 +6,11 @@ using UnityEngine;
 namespace TarodevController {
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
     public class PlayerController : MonoBehaviour, IPlayerController {
-        [SerializeField] private ScriptableStats _stats;
+
+        //Original Line
+        /*[SerializeField] private ScriptableStats _stats;*/
+
+        public  ScriptableStats _stats;
 
         #region Internal
 

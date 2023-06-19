@@ -123,6 +123,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPicked: 0
   Source: {fileID: 0}
+  possibleEffects: []
+  effectIconPrefab: {fileID: 4729232820574219488, guid: dc5371e48bff9dd4b9b4ab57b02ec2d3, type: 3}
+  effectBar: {fileID: 0}
   item: {fileID: 11400000, guid: b72cb3c30e8b17042b574637e57d100b, type: 2}
 --- !u!61 &2133897126706753690
 BoxCollider2D:

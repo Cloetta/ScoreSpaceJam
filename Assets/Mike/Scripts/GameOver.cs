@@ -30,7 +30,7 @@ public class GameOver : MonoBehaviour
             //Activate pop-up window with score and playagain button
             gameOverPanel.SetActive(true);
 
-                    }
+        }
         else
         {
             Time.timeScale = 1;
@@ -41,9 +41,14 @@ public class GameOver : MonoBehaviour
             PlayAgain();
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //Enable main menu
+        }
+
     }
 
-    private bool isGameOver()
+    public bool isGameOver()
     {
         //Fetching the main Camera in the scene
         cam = Camera.main;
@@ -71,9 +76,12 @@ public class GameOver : MonoBehaviour
             }
             else if ((player.transform.position.y - cam.transform.position.y) >= 9.5f)
             {
+                //comment this
+                /*
                 float camY = cam.transform.position.y;
                 Vector3 newCamPosY = new Vector3(cam.transform.position.x, camY, cam.transform.position.z);
-                transform.Translate(newCamPosY * 3.5f * Time.deltaTime);
+                transform.Translate(newCamPosY * 3.5f * Time.deltaTime);*/
+                return false;
 
             }
 
