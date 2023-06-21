@@ -69,7 +69,7 @@ MonoBehaviour:
   AllowDash: 1
   DashVelocity: 50
   DashDurationFrames: 5
-  DashCooldown: 1.5
+  DashCooldown: 1
   DashEndHorizontalMultiplier: 0.25
   AllowAttacks: 0
   AttackFrameCooldown: 15
