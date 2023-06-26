@@ -9,6 +9,9 @@ public class GameOver : MonoBehaviour
     [SerializeField]
     GameObject player;
 
+    [SerializeField]
+    SmokeMovement smoke;
+
     private bool isGameOver = false;
 
     public int lives = 3;
@@ -92,7 +95,7 @@ public class GameOver : MonoBehaviour
 
             lives--;
 
-            this.gameObject.transform.position -= new Vector3(0, -5, 0);
+            smoke.transform.position += new Vector3(0, -5, 0);
 
             player.transform.position = respawnPosition;
 

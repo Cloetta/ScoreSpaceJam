@@ -25,8 +25,13 @@ public class SmokeMovement : MonoBehaviour
             targetScore += pointsAmountEachDifficultyIncrease;
         }
 
-        // Move the smoke upwards based on the moveSpeed and the elapsed time since the last frame
         transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
+        transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+
+        // Move the smoke upwards based on the moveSpeed and the elapsed time since the last frame
+        
+
+
 
     }
 }
