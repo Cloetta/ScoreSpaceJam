@@ -86,6 +86,9 @@
     <Compile Include="Assets\Tarodev 2D Controller\_Scripts\CustomExamplePlayerController.cs" />
     <Compile Include="Assets\Tarodev 2D Controller\_Scripts\ScriptableStats.cs" />
     <Compile Include="Assets\Mike\Scripts\CameraMove.cs" />
+    <Compile Include="Assets\Mike\Scripts\MovingPlatform.cs" />
+    <Compile Include="Assets\Mike\Scripts\StickToPlatform.cs" />
+    <Compile Include="Assets\Mike\Scripts\BreakingPlatform.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
