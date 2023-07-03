@@ -4,25 +4,34 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class GameOver : MonoBehaviour
+public class GameOver3 : MonoBehaviour
 {
     [SerializeField]
     GameObject player;
-    Camera cam;
 
     [SerializeField]
-    Collider2D objCollider;
+    SmokeMovement smoke;
+
+    private bool isGameOver = false;
+
+    public int lives = 3;
 
     [SerializeField]
     GameObject gameOverPanel;
 
-    Plane[] planes;
+
+    public Vector2 respawnPosition;
+
+    private void Start()
+    {
+        isGameOver = false;
+    }
 
     void Update()
     {
-        isGameOver();
+        //isGameOver();
 
-        if (isGameOver())
+        if (isGameOver)
         {
             //Freeze time
             Time.timeScale = 0;
@@ -48,54 +57,7 @@ public class GameOver : MonoBehaviour
 
     }
 
-    public bool isGameOver()
-    {
-        //Fetching the main Camera in the scene
-        cam = Camera.main;
-
-        //Calculating plane area according to cam field of view
-        planes = GeometryUtility.CalculateFrustumPlanes(cam);
-
-        //reference 
-        objCollider = player.GetComponent<CapsuleCollider2D>();
-
-
-        if (GeometryUtility.TestPlanesAABB(planes, objCollider.bounds))
-        {
-            //Nothing happens, still in game, within the range of the camera!
-
-            return false;
-        }
-        else
-        {
-            if ((player.transform.position.y - cam.transform.position.y) <= -11.5f)
-            {
-                //GameOver
-                Debug.Log("Player out of field! Game over!");
-                return true;
-            }
-            else if ((player.transform.position.y - cam.transform.position.y) >= 9.5f)
-            {
-                //comment this
-
-                /*float moveSpeed = 2f;
-
-                Vector3 camPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-
-                Vector3 targetPosition = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
-
-                // Move the camera upwards based on the moveSpeed and the elapsed time since the last frame
-                transform.position = Vector3.MoveTowards(camPosition, targetPosition, Time.deltaTime * moveSpeed);*/
-                return false;
-
-            }
-
-
-            //Nothing happens, still in game, the player is above the camera
-            return false;
-
-        }
-    }
+    
 
 
     public void PlayAgain()
@@ -126,5 +88,27 @@ public class GameOver : MonoBehaviour
                     transform.Translate(newCamPosX * 6.5f * Time.deltaTime);
                     return false;
                 }*/
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
 
+            lives--;
+
+            smoke.transform.position += new Vector3(0, -5, 0);
+
+            player.transform.position = respawnPosition;
+
+            //player.transform.position = lastCheckpointPosition;
+
+            Debug.Log("-1 life");
+
+            if(lives <= 0)
+            {
+                isGameOver = true;
+            }
+
+            
+        }
+    }
 }

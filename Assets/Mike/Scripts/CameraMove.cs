@@ -1,62 +1,31 @@
 using UnityEngine;
-using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 
-/// <summary>
-/// An add-on module for Cinemachine Virtual Camera that locks the camera's Y co-ordinate
-/// </summary>
-[SaveDuringPlay]
-[AddComponentMenu("")] // Hide in menu
-public class CameraMove : CinemachineExtension
+public class CameraMove : MonoBehaviour
 {
-    public float moveSpeed = 1.0f; // Speed at which the camera moves upwards
+    public float moveSpeed = 1.0f; //Speed at which the camera moves upwards
     private int targetScore;
-
-    private CinemachineVirtualCamera virtualCamera;
     [SerializeField] private ScoreHolder scoreHolder;
     [SerializeField] private GameObject player;
     [SerializeField] private int pointsAmountEachDifficultyIncrease = 100; //Default, you can change it in the inspector: Everytime that amount of points are collected, the speed increases.
     [SerializeField] private float speedIncrease = 0.25f;
+    [SerializeField] private float distanceToCameraTop = 2f;
 
-    //[Tooltip("Lock the camera's Y position to the value of the ")]
-    //public float m_YPosition = 10;
 
-    protected override void PostPipelineStageCallback(
-        CinemachineVirtualCameraBase vcam,
-        CinemachineCore.Stage stage, ref CameraState state, float deltaTime)
-    {
-        if (stage == CinemachineCore.Stage.Finalize)
-        {
-            var pos = state.RawPosition;
-            float Ydiff = player.transform.position.y - transform.position.y;
-
-            if (Ydiff >= 9.5f)
-            {
-                pos.y = Mathf.Lerp(transform.position.y, player.transform.position.y, Time.deltaTime * 0.5f);
-
-            }
-            else
-            {
-                pos.y = transform.position.y;
-            }
-
-            state.RawPosition = pos;
-        }
-    }
-
+    private float cameraTopPosition;
+    public float cameraOffset = 2f;
+    private bool shouldFollowPlayer;
 
     private void Start()
     {
-        // Get the reference to the CinemachineVirtualCamera component attached to the same GameObject
-        virtualCamera = GetComponent<CinemachineVirtualCamera>();
+        //Get the reference to the CinemachineVirtualCamera component attached to the same GameObject
         targetScore = scoreHolder.score + pointsAmountEachDifficultyIncrease;
-
+        
     }
 
     private void Update()
     {
-        //UpdatingCameraSpeedByScore();
 
         if (scoreHolder.score >= targetScore)
         {
@@ -67,14 +36,35 @@ public class CameraMove : CinemachineExtension
             targetScore += pointsAmountEachDifficultyIncrease;
         }
 
-        // Move the camera upwards based on the moveSpeed and the elapsed time since the last frame
+        cameraTopPosition = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, 0)).y;
+
+        //Move the camera upwards
         transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
 
-        /*float camY = cam.transform.position.y;
-                Vector3 newCamPosY = new Vector3(cam.transform.position.x, camY, cam.transform.position.z);
-                transform.Translate(newCamPosY * 3.5f * Time.deltaTime);*/
+        //Calculate the target Y position for the camera
+        float targetY = player.transform.position.y + cameraOffset;
 
-        Debug.Log(moveSpeed);
+        // If the player is above the camera's current Y position
+        if (player.transform.position.y > cameraTopPosition - distanceToCameraTop)
+        {
+            shouldFollowPlayer = true;
+        }
+
+        //If the flag is set, lerp the camera's position to catch up with the player
+        if (shouldFollowPlayer)
+        {
+            Vector3 targetPosition = new Vector3(transform.position.x, targetY, transform.position.z);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, 15 * Time.deltaTime);
+
+            //Check if the camera has reached or surpassed the target position
+            if (transform.position.y >= targetY)
+            {
+                shouldFollowPlayer = false;
+            }
+        }
+       
     }
+
+    //aaa
 
 }

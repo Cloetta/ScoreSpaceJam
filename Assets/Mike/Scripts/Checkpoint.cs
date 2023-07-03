@@ -22,7 +22,7 @@ public class Checkpoint : MonoBehaviour
         if(collision.tag == "Player")
         {
             Debug.Log("collided");
-            gameOver.respawnPosition = collision.transform.position;
+            //gameOver.respawnPosition = collision.transform.position;
         }
     }
 }
