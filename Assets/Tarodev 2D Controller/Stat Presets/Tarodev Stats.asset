@@ -31,7 +31,7 @@ MonoBehaviour:
   GroundingForce: -1.5
   StickyFeetMultiplier: 2
   GrounderDistance: 0.05
-  AllowCrouching: 0
+  AllowCrouching: 1
   CrouchSpeedPenalty: 0.5
   CrouchSlowdownFrames: 50
   CrouchBufferCheck: 0.01
@@ -44,14 +44,14 @@ MonoBehaviour:
   JumpBufferFrames: 7
   AllowWalls: 1
   RequireInputPush: 0
-  WallClimbSpeed: 5
+  WallClimbSpeed: -1
   WallFallAcceleration: 8
   MaxWallFallSpeed: 15
   WallJumpPower: {x: 25, y: 25}
   WallJumpInputLossFrames: 18
   WallJumpCoyoteFrames: 5
   WallDetectorSize: {x: 0.75, y: 1.25}
-  AllowLadders: 1
+  AllowLadders: 0
   AutoAttachToLadders: 1
   SnapToLadders: 1
   LadderSnapTime: 0.05
@@ -66,7 +66,7 @@ MonoBehaviour:
   StandUpOffset: {x: 0.19, y: 0.02}
   LedgeRaycastSpacing: 0.3
   LedgeClimbDuration: 0.5
-  AllowDash: 1
+  AllowDash: 0
   DashVelocity: 50
   DashDurationFrames: 5
   DashCooldown: 1
