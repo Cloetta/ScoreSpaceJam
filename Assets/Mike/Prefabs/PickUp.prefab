@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1731022110, guid: e8888e81fbe0f9d41a5f5735ec2a345a, type: 3}
+  m_Sprite: {fileID: 1513383802, guid: e8888e81fbe0f9d41a5f5735ec2a345a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 2419647272791622129}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a2080dc4b640ac54c9b5b0c57717a25b, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -125,12 +125,6 @@ MonoBehaviour:
   Source: {fileID: 0}
   possibleEffects:
   - {fileID: 11400000, guid: 980dca0c1ab8e0649a46ff1036cbcdb6, type: 2}
-  - {fileID: 11400000, guid: 6ee56b57243a7a6459a27456a011fbbf, type: 2}
-  - {fileID: 11400000, guid: 1fc69a174a748f745974e1e99edd33ea, type: 2}
-  - {fileID: 11400000, guid: 404e22982488eb845a2db90b2d1abf19, type: 2}
-  - {fileID: 11400000, guid: de1686e722275b14fa542e9e515a5259, type: 2}
-  - {fileID: 11400000, guid: c24020342bb2293458ef8b10b8779c25, type: 2}
-  - {fileID: 11400000, guid: 6a9384707821e8c4c9fa65e487ec2f07, type: 2}
   effectIconPrefab: {fileID: 4729232820574219488, guid: dc5371e48bff9dd4b9b4ab57b02ec2d3, type: 3}
   iconToDisplay: {fileID: 979234830775005877, guid: dc5371e48bff9dd4b9b4ab57b02ec2d3, type: 3}
   effectBar: {fileID: 0}
