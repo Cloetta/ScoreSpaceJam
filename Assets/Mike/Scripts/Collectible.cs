@@ -78,10 +78,10 @@ public class Collectible : MonoBehaviour
         if (collision.tag == "Player")
         {
 
-            Source.Play();
-
             if (isPicked == false)
             {
+
+                Source.Play();
                 item.ApplyPoints();
 
                 switch (item.effectType)
