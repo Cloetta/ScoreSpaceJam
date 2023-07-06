@@ -10,6 +10,8 @@ public class SectionSpawner : MonoBehaviour
 
     [SerializeField] private Transform player;
 
+    [SerializeField] private float sectionHeight;
+
     public List<GameObject> spawnedSections = new List<GameObject>();
 
 
@@ -23,7 +25,7 @@ public class SectionSpawner : MonoBehaviour
     private void Awake()
     {
         currentPosition = new Vector3(0, 0, 0);
-        nextPosition = new Vector3(0, 10, 0);
+        nextPosition = new Vector3(0, sectionHeight, 0);
         sectionCounter = 0;
 
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
