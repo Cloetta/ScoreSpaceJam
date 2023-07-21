@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using TarodevController;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class Collectible : MonoBehaviour
@@ -11,7 +11,12 @@ public class Collectible : MonoBehaviour
 
     public AudioSource Source;
 
-    
+    public Animator anim;
+
+    [SerializeField] PostProcessVolume cameraVolume;
+
+    public PostProcessProfile normalVolume;
+    public PostProcessProfile mushroomVolume;
 
     public List<Items> possibleEffects = new List<Items>();
 
@@ -98,6 +103,11 @@ public class Collectible : MonoBehaviour
                     case Items.EffectType.PlayerSpeedChange:
                         StartCoroutine(PlayerSpeedChange());
                         break;
+                    case Items.EffectType.Mushroom:
+                        StartCoroutine(SwapVolume());
+                        StartCoroutine(MushroomEffect());
+                        break;
+
                 }
 
                 isPicked = true;
@@ -221,6 +231,62 @@ public class Collectible : MonoBehaviour
 
         Debug.Log("effect ended");
     }
+
+    IEnumerator SwapVolume()
+    {
+        //PlayerController playerStats = FindObjectOfType<PlayerController>();
+
+        Debug.Log("mushOn");
+        Debug.Log(cameraVolume.profile.name);
+
+        iconToDisplay.sprite = item.icon;
+
+        trigger = iconToDisplay.GetComponent<TooltipTrigger>();
+        trigger.content = item.DefineContent();
+
+        GameObject icon = Instantiate(effectIconPrefab, effectBar.transform);
+
+        //Animation trigger fade in
+        anim.SetTrigger("isActive");
+
+        yield return new WaitForSeconds(1f);
+
+        cameraVolume.profile = mushroomVolume;
+        Destroy(icon, item.duration);
+
+
+
+    }
+
+    IEnumerator MushroomEffect()
+    {
+        //PlayerController playerStats = FindObjectOfType<PlayerController>();
+
+        anim.SetBool("Active", true);
+
+
+
+        Debug.Log("Effect applied");
+
+        yield return new WaitForSeconds(item.duration - 1f);
+
+        cameraVolume.profile = normalVolume;
+
+        Debug.Log(cameraVolume.profile.name);
+
+
+
+        //animation trigger fade out
+        anim.SetTrigger("isNotActive");
+        anim.SetBool("Active", false);
+
+        
+        //restore original values here
+
+        Debug.Log("effect ended");
+    }
+
+
 
 
 }

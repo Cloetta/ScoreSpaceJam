@@ -14,6 +14,7 @@ public class Items : ScriptableObject
     [HideInInspector] public EffectType effectType;
     [HideInInspector] public string tooltip = "";
     [HideInInspector] public Sprite icon;
+    public float spawningRate = 0;
 
 
     public virtual void ApplyPoints()
@@ -38,7 +39,8 @@ public class Items : ScriptableObject
         CameraSpeed,
         JumpForceChange,
         MaxJumpsChange,
-        PlayerSpeedChange
+        PlayerSpeedChange,
+        Mushroom
 
     }
 

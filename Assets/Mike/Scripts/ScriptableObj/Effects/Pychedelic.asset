@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07634ce8ba42acb4cac41d03a1e4dc08, type: 3}
+  m_Name: Pychedelic
+  m_EditorClassIdentifier: 
+  itemName: Mushroom
+  pointsAmount: 0
+  boostMultiplier: 1
+  duration: 5
+  hasEffects: 1
+  effectType: 5
+  tooltip: ?? - 5 seconds
+  icon: {fileID: -1625180184, guid: e8888e81fbe0f9d41a5f5735ec2a345a, type: 3}
+  spawningRate: 0
