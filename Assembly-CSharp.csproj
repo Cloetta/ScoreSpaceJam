@@ -76,6 +76,7 @@
     <Compile Include="Assets\Mike\Scripts\TooltipSystem\Tooltip.cs" />
     <Compile Include="Assets\Mike\Scripts\OldScripts\CameraMove2.cs" />
     <Compile Include="Assets\Mike\Scripts\Collectible.cs" />
+    <Compile Include="Assets\Mike\Scripts\PickupGenerator.cs" />
     <Compile Include="Assets\Mike\Scripts\OldScripts\GameOver2.cs" />
     <Compile Include="Assets\Tarodev 2D Controller\Demo\Demo Scripts\PlatformBase.cs" />
     <Compile Include="Assets\Mike\Scripts\CameraMove.cs" />
@@ -92,7 +93,6 @@
     <Compile Include="Assets\Mike\Scripts\BreakingPlatform.cs" />
     <Compile Include="Assets\Tarodev 2D Controller\_Scripts\ScriptableStats.cs" />
     <Compile Include="Assets\Mike\Scripts\OldScripts\CameraMove3.cs" />
-    <Compile Include="Assets\Mike\Scripts\PickupGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

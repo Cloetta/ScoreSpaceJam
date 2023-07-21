@@ -104,8 +104,9 @@ public class Collectible : MonoBehaviour
                         StartCoroutine(PlayerSpeedChange());
                         break;
                     case Items.EffectType.Mushroom:
-                        StartCoroutine(SwapVolume());
-                        StartCoroutine(MushroomEffect());
+                        //StartCoroutine(SwapVolume());
+                        //StartCoroutine(MushroomEffect());
+                        StartCoroutine(MushroomEffectTest());
                         break;
 
                 }
@@ -236,56 +237,158 @@ public class Collectible : MonoBehaviour
     {
         //PlayerController playerStats = FindObjectOfType<PlayerController>();
 
+        float timer = 0;
+
+        float duration = item.duration;
+        
+
         Debug.Log("mushOn");
-        Debug.Log(cameraVolume.profile.name);
 
-        iconToDisplay.sprite = item.icon;
+        if (!anim.GetBool("Active"))
+        {
+            iconToDisplay.sprite = item.icon;
 
-        trigger = iconToDisplay.GetComponent<TooltipTrigger>();
-        trigger.content = item.DefineContent();
+            trigger = iconToDisplay.GetComponent<TooltipTrigger>();
+            trigger.content = item.DefineContent();
 
-        GameObject icon = Instantiate(effectIconPrefab, effectBar.transform);
+            GameObject icon = Instantiate(effectIconPrefab, effectBar.transform);
 
-        //Animation trigger fade in
-        anim.SetTrigger("isActive");
+            //Animation trigger fade in
+            anim.SetTrigger("isActive");
 
-        yield return new WaitForSeconds(1f);
+            Debug.Log(cameraVolume.profile.name);
 
-        cameraVolume.profile = mushroomVolume;
-        Destroy(icon, item.duration);
+            yield return new WaitForSeconds(1f);
 
+            cameraVolume.profile = mushroomVolume;
+
+            Debug.Log(cameraVolume.profile.name);
+
+            timer += Time.deltaTime;
+
+            if (timer >= duration)
+            {
+                Destroy(icon);
+            }
+
+
+        }
+        else
+        {
+            duration = item.duration;
+        }
+
+      
 
 
     }
 
     IEnumerator MushroomEffect()
     {
+
+        float duration = item.duration - 1f;
         //PlayerController playerStats = FindObjectOfType<PlayerController>();
-
-        anim.SetBool("Active", true);
-
-
-
-        Debug.Log("Effect applied");
-
-        yield return new WaitForSeconds(item.duration - 1f);
-
-        cameraVolume.profile = normalVolume;
-
-        Debug.Log(cameraVolume.profile.name);
+        if (!anim.GetBool("Active"))
+        {
+            anim.SetBool("Active", true);
 
 
 
-        //animation trigger fade out
-        anim.SetTrigger("isNotActive");
-        anim.SetBool("Active", false);
+            Debug.Log("Effect applied");
 
-        
-        //restore original values here
+            yield return new WaitForSeconds(duration);
 
-        Debug.Log("effect ended");
+            cameraVolume.profile = normalVolume;
+
+            Debug.Log(cameraVolume.profile.name);
+
+
+
+            //animation trigger fade out
+            anim.SetTrigger("isNotActive");
+            anim.SetBool("Active", false);
+
+            Debug.Log("effect ended");
+
+            //restore original values here
+
+        }
+        else
+        {
+            duration = item.duration - 1;
+        }
+
     }
 
+
+    IEnumerator MushroomEffectTest()
+    {
+
+        float duration = item.duration;
+        
+
+        GameObject icon = Instantiate(effectIconPrefab, effectBar.transform);
+        Destroy(icon, item.duration);
+
+
+        Debug.Log("mushOn");
+
+        if (!anim.GetBool("Active"))
+        {
+            iconToDisplay.sprite = item.icon;
+
+            trigger = iconToDisplay.GetComponent<TooltipTrigger>();
+            trigger.content = item.DefineContent();
+
+            //icon = Instantiate(effectIconPrefab, effectBar.transform);
+
+            //Animation trigger fade in
+            anim.SetTrigger("isActive");
+
+            Debug.Log(cameraVolume.profile.name);
+
+            yield return new WaitForSeconds(1f);
+
+            cameraVolume.profile = mushroomVolume;
+
+            Debug.Log(cameraVolume.profile.name);
+
+            anim.SetBool("Active", true);
+
+            Debug.Log("Effect applied");
+
+            yield return new WaitForSeconds(duration-1);
+
+            cameraVolume.profile = normalVolume;
+
+            Debug.Log(cameraVolume.profile.name);
+
+
+
+            //animation trigger fade out
+            anim.SetTrigger("isNotActive");
+            anim.SetBool("Active", false);
+
+            Debug.Log("effect ended");
+            
+
+
+        }
+        else
+        {
+            if (icon != null)
+            {
+                Destroy(icon);
+
+                icon = Instantiate(effectIconPrefab, effectBar.transform);
+
+                Destroy(icon, item.duration);
+            }
+        }
+        
+
+        
+    }
 
 
 

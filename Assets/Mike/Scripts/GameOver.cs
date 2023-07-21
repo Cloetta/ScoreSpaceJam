@@ -71,7 +71,7 @@ public class GameOver : MonoBehaviour
             if ((player.transform.position.y - cam.transform.position.y) <= -11.5f)
             {
                 //GameOver
-                Debug.Log("Player out of field! Game over!");
+                //Debug.Log("Player out of field! Game over!");
                 return true;
             }
             else if ((player.transform.position.y - cam.transform.position.y) >= 9.5f)
