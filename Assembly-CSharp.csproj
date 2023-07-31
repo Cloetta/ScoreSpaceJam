@@ -60,6 +60,7 @@
     <Compile Include="Assets\Mike\Scripts\CheckpointController.cs" />
     <Compile Include="Assets\Mike\Scripts\TooltipSystem\TooltipTrigger.cs" />
     <Compile Include="Assets\Tarodev 2D Controller\Demo\Demo Scripts\PatrolPlatform.cs" />
+    <Compile Include="Assets\Mike\Scripts\Store.cs" />
     <Compile Include="Assets\Mike\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\Mike\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\Mike\Scripts\TooltipSystem\TooltipSystem.cs" />

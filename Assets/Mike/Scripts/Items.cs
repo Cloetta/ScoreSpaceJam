@@ -14,6 +14,8 @@ public class Items : ScriptableObject
     [HideInInspector] public EffectType effectType;
     [HideInInspector] public string tooltip = "";
     [HideInInspector] public Sprite icon;
+    [HideInInspector] public int currency = 0;
+    [HideInInspector] public int price = 0;
     public float spawningRate = 0;
 
 
@@ -24,6 +26,10 @@ public class Items : ScriptableObject
         ScoreHolder scoreHolder = FindObjectOfType<ScoreHolder>();
 
         scoreHolder.score += pointsAmount;
+
+        scoreHolder.gold += currency;
+
+        scoreHolder.gold -= price;
 
         //e.g. 0.5 half of the speed, 1 normal speed, 2 double of the speed
 

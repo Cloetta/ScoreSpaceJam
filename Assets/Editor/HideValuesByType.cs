@@ -15,6 +15,8 @@ public class HideValuesByType : Editor
     SerializedProperty tooltip;
     SerializedProperty effectType;
     SerializedProperty icon;
+    SerializedProperty currency;
+    SerializedProperty price;
 
 
     private void OnEnable()
@@ -26,6 +28,8 @@ public class HideValuesByType : Editor
         tooltip = serializedObject.FindProperty("tooltip");
         effectType = serializedObject.FindProperty("effectType");
         icon = serializedObject.FindProperty("icon");
+        currency = serializedObject.FindProperty("currency");
+        price = serializedObject.FindProperty("price");
     }
 
     public override void OnInspectorGUI()
@@ -38,6 +42,7 @@ public class HideValuesByType : Editor
         if (!hasEffects.boolValue)
         {
             EditorGUILayout.PropertyField(pointsAmount);
+            EditorGUILayout.PropertyField(currency);
         }
         else
         {
@@ -46,6 +51,7 @@ public class HideValuesByType : Editor
             EditorGUILayout.PropertyField(tooltip);
             EditorGUILayout.PropertyField(effectType);
             EditorGUILayout.PropertyField(icon);
+            EditorGUILayout.PropertyField(price);
         }
 
         // must be on the end.

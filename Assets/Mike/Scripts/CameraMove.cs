@@ -12,6 +12,9 @@ public class CameraMove : MonoBehaviour
     [SerializeField] private float speedIncrease = 0.25f;
     [SerializeField] private float distanceToCameraTop = 2f;
 
+    [SerializeField] private int scoreAmountIncrease = 0; //amount of points gained per height reached
+    [SerializeField] private float heightStep = 0; //how many units before score increase
+    private float nextScoreIncrease = 0;
 
     private float cameraTopPosition;
     public float cameraOffset = 2f;
@@ -21,6 +24,7 @@ public class CameraMove : MonoBehaviour
     {
         //Get the reference to the CinemachineVirtualCamera component attached to the same GameObject
         targetScore = scoreHolder.score + pointsAmountEachDifficultyIncrease;
+        nextScoreIncrease = transform.position.y + heightStep;
         
     }
 
@@ -31,9 +35,16 @@ public class CameraMove : MonoBehaviour
         {
             moveSpeed += speedIncrease;
 
-            Debug.Log(moveSpeed);
+            //Debug.Log(moveSpeed);
 
             targetScore += pointsAmountEachDifficultyIncrease;
+        }
+
+        if (transform.position.y >= nextScoreIncrease)
+        {
+            scoreHolder.score += scoreAmountIncrease; 
+
+            nextScoreIncrease += heightStep;
         }
 
         cameraTopPosition = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, 0)).y;

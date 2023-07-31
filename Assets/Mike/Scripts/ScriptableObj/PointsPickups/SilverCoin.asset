@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: SilverCoin
   m_EditorClassIdentifier: 
   itemName: SilverCoin
-  pointsAmount: 25
+  pointsAmount: 0
   boostMultiplier: 1
-  debuffMultiplier: 1
+  duration: 0
+  hasEffects: 0
+  effectType: 0
+  tooltip: 
+  icon: {fileID: 0}
+  currency: 25
+  price: 0
+  spawningRate: 0

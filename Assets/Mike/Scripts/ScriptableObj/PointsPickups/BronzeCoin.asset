@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: BronzeCoin
   m_EditorClassIdentifier: 
   itemName: BronzeCoin
-  pointsAmount: 10
+  pointsAmount: 0
   boostMultiplier: 1
   duration: 0
   hasEffects: 0
   effectType: 0
   tooltip: 
+  icon: {fileID: 0}
+  currency: 10
+  price: 0
+  spawningRate: 0

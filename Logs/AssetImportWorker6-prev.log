@@ -1,0 +1,869 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.21f1 (1b156197d683) revision 1774945'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 32635 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\UnityProjects\2021.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+D:/UnityProjects/ScoreSpaceJam
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+53510
+Successfully changed project path to: D:/UnityProjects/ScoreSpaceJam
+D:/UnityProjects/ScoreSpaceJam
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [22916] Host "[IP] 192.168.0.22 [Port] 0 [Flags] 2 [Guid] 1009635094 [EditorId] 1009635094 [Version] 1048832 [Id] WindowsEditor(7,Cloetta) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [22916] Host "[IP] 192.168.0.22 [Port] 0 [Flags] 2 [Guid] 1009635094 [EditorId] 1009635094 [Version] 1048832 [Id] WindowsEditor(7,Cloetta) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 103.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.21f1 (1b156197d683)
+[Subsystems] Discovering subsystems at path D:/UnityProjects/2021.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/ScoreSpaceJam/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5968 MB
+    Driver:   31.0.15.3179
+Initialize mono
+Mono path[0] = 'D:/UnityProjects/2021.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityProjects/2021.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/UnityProjects/2021.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityProjects/2021.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/UnityProjects/2021.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001975 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 90.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.538 seconds
+Domain Reload Profiling:
+	ReloadAssembly (538ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (388ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (93ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (232ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004486 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 104.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Domain Reload Profiling:
+	ReloadAssembly (937ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (770ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (430ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (105ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (213ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4455 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 62 unused Assets / (1.3 MB). Loaded Objects now: 4909.
+Memory consumption went from 174.3 MB to 172.9 MB.
+Total: 2.809700 ms (FindLiveObjects: 0.464700 ms CreateObjectMapping: 0.185500 ms MarkObjects: 2.021500 ms  DeleteObjects: 0.137000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 79452.255562 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_462.asset
+  artifactKey: Guid(a9b5050cf516d0a4b9697d428d3ccc9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_462.asset using Guid(a9b5050cf516d0a4b9697d428d3ccc9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7162c1c761543677efffec63a304aee2') in 0.095537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_488.asset
+  artifactKey: Guid(76e0c449d526a1645a1e5b7a19b71ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_488.asset using Guid(76e0c449d526a1645a1e5b7a19b71ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57147c3feed74a4705022d7fc022aded') in 0.025173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_513.asset
+  artifactKey: Guid(7143bbebab8e8e946851def823892af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_513.asset using Guid(7143bbebab8e8e946851def823892af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb61eb9da2237b2437caa9245956bd91') in 0.029268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_472.asset
+  artifactKey: Guid(de37110f3912e7f409377898855e4ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_472.asset using Guid(de37110f3912e7f409377898855e4ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59669eafb7816be097d88e699a8fdfa') in 0.033103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_509.asset
+  artifactKey: Guid(ebb9f986db39fac4289ad39573628485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_509.asset using Guid(ebb9f986db39fac4289ad39573628485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b99a5953eb2da73d76792c3433d2ce') in 0.028042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_505.asset
+  artifactKey: Guid(2cf8093d160ee6340bf765c66d7d7fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_505.asset using Guid(2cf8093d160ee6340bf765c66d7d7fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5795e4afbf3b8d39fc9e2a0ef2381f') in 0.019104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_480.asset
+  artifactKey: Guid(d68ae9693e697f74b9c00f1df7bf92e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_480.asset using Guid(d68ae9693e697f74b9c00f1df7bf92e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92123f6027f49c8bfcfffa02a2949cdb') in 0.020026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_504.asset
+  artifactKey: Guid(74218b8c3700eea4fab33bece713f235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_504.asset using Guid(74218b8c3700eea4fab33bece713f235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4356e804a8da95052c99261e94487fd5') in 0.022340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_489.asset
+  artifactKey: Guid(8705b92f347f1f24f8ff3f23a06f4572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_489.asset using Guid(8705b92f347f1f24f8ff3f23a06f4572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b7a715c0a315115416590cb959c797') in 0.020586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_487.asset
+  artifactKey: Guid(910b14f2dd9bb074b88352831e6e8c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_487.asset using Guid(910b14f2dd9bb074b88352831e6e8c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a171e356cd8acd126df86f67a98d40fe') in 0.019790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_473.asset
+  artifactKey: Guid(3c98ef79d9fbac442a5d3c54bafd99a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_473.asset using Guid(3c98ef79d9fbac442a5d3c54bafd99a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e02908b9cfd9bf2f6eebddd93b8d46f') in 0.020011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_485.asset
+  artifactKey: Guid(4bc1a3045e5e9fb42ac03f08bc847b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_485.asset using Guid(4bc1a3045e5e9fb42ac03f08bc847b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bdddb2fb0c88859cc93af81c2c32a7') in 0.019591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_471.asset
+  artifactKey: Guid(1136b9c02c433ec458fcdd0e9b72e27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_471.asset using Guid(1136b9c02c433ec458fcdd0e9b72e27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09d90eea8e373ecfd47535bffc45fc9') in 0.019734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.716003 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_222.asset
+  artifactKey: Guid(1a26b87567c5fa04b8cf58c4091ab897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_222.asset using Guid(1a26b87567c5fa04b8cf58c4091ab897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906544fd5f9094ab805bcb0ed5d40de8') in 0.036273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_230.asset
+  artifactKey: Guid(1f70e194d47540c44a25e9ae61158045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_230.asset using Guid(1f70e194d47540c44a25e9ae61158045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e00375ffb6cabc592a71b1731ea0d36') in 0.029074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_226.asset
+  artifactKey: Guid(89aec4a56cf99104590430a1b32219c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_226.asset using Guid(89aec4a56cf99104590430a1b32219c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22fe381e7ff2b39d905f04efa855205c') in 0.028143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_225.asset
+  artifactKey: Guid(65ccd082d5197704a9bdace4257a0d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_225.asset using Guid(65ccd082d5197704a9bdace4257a0d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '895d6afe14c28680ec129e6f34749b71') in 0.020582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_228.asset
+  artifactKey: Guid(b5f9f38e83467b74cac2b7bb14f45378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_228.asset using Guid(b5f9f38e83467b74cac2b7bb14f45378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b438b4a5b60934a70b831b2c0288a6') in 0.019796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_245.asset
+  artifactKey: Guid(15ca70047c8e68f49b1fcc9e3f2ea15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_245.asset using Guid(15ca70047c8e68f49b1fcc9e3f2ea15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285298b64a8eaec93d3fb5615f739f81') in 0.019339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_232.asset
+  artifactKey: Guid(24209e3bdfbb4334980a9c90942379c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_232.asset using Guid(24209e3bdfbb4334980a9c90942379c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '630ce768b3ed5331081406171b82191f') in 0.019413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.989023 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_386.asset
+  artifactKey: Guid(d4babeec667c14f4299ffb5161482bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_386.asset using Guid(d4babeec667c14f4299ffb5161482bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c7e6069f927835c917a4cfcf6e0e10') in 0.038780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_430.asset
+  artifactKey: Guid(072dc0787efd639499721a314ed31aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_430.asset using Guid(072dc0787efd639499721a314ed31aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f532d74b73134c06ee40288d011bb119') in 0.018827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_397.asset
+  artifactKey: Guid(0f1c522b8ca7e994287ed5c682dc21ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_397.asset using Guid(0f1c522b8ca7e994287ed5c682dc21ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77157da16c0068cac745e272afb743ae') in 0.020368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_413.asset
+  artifactKey: Guid(38b0b7afb949d744b8402cace2a45345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_413.asset using Guid(38b0b7afb949d744b8402cace2a45345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ab08be269ce5e8fde894ed6ee151ee') in 0.024712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_433.asset
+  artifactKey: Guid(847c67711412c464287487b540efeb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_433.asset using Guid(847c67711412c464287487b540efeb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9c9a356b464fa9978681f48a792a9d') in 0.016391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_399.asset
+  artifactKey: Guid(130ad575bea17c645b4c97d938e6b2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_399.asset using Guid(130ad575bea17c645b4c97d938e6b2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcd00a2f0ea687cbe48093971cff7b6') in 0.024191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_421.asset
+  artifactKey: Guid(034c8c7402c456f49bbeaa1d1061ae29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_421.asset using Guid(034c8c7402c456f49bbeaa1d1061ae29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503658bf94eefbad2b7ab44f2b98aa74') in 0.019746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_394.asset
+  artifactKey: Guid(2d3d2b347f6d9cd4a8786844f5e19e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_394.asset using Guid(2d3d2b347f6d9cd4a8786844f5e19e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcf2aea9af0a15ebb7537e4397699ba') in 0.020508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_437.asset
+  artifactKey: Guid(b4ad684e8ab8d784fb88c1b59e260c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_437.asset using Guid(b4ad684e8ab8d784fb88c1b59e260c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ac827ee529b5ec538a6ea805a3a228') in 0.021856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_402.asset
+  artifactKey: Guid(9b2978db7d4d01440b5e7617b700e007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_402.asset using Guid(9b2978db7d4d01440b5e7617b700e007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be4b820ce207b5498dff3fc5656dd1b3') in 0.024221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_444.asset
+  artifactKey: Guid(00e23e5efdaf0d442aa8992ca0931638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_444.asset using Guid(00e23e5efdaf0d442aa8992ca0931638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12d927e7c9aae6e4a742f0c981bc9d6') in 0.021511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_407.asset
+  artifactKey: Guid(fa2d0d15c06917644afdbef1118a0d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_407.asset using Guid(fa2d0d15c06917644afdbef1118a0d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6085f4045af4f022c0e62f62ef74a819') in 0.020653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_395.asset
+  artifactKey: Guid(464a7589f8da5cc43a2f4547973e4780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_395.asset using Guid(464a7589f8da5cc43a2f4547973e4780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4bbb002ce7a02e2b3378a7a4d52ecd1') in 0.020589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_415.asset
+  artifactKey: Guid(027b3911b7f8a72459ce032fe05b8996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_415.asset using Guid(027b3911b7f8a72459ce032fe05b8996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119925f5269e3ca747a3b4f3b9ef1383') in 0.021862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_442.asset
+  artifactKey: Guid(811a6ca16a7452e4083974d9e9708fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_442.asset using Guid(811a6ca16a7452e4083974d9e9708fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526d142a3515ac8419a1afe2178d4d39') in 0.018803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_409.asset
+  artifactKey: Guid(f1127e33a6155fc428c7a87b14b6620a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_409.asset using Guid(f1127e33a6155fc428c7a87b14b6620a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8444289d0af6f99ecceeab2457eac8') in 0.019803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_424.asset
+  artifactKey: Guid(0c2847dfc00808e40ac2dfd410ac48fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_424.asset using Guid(0c2847dfc00808e40ac2dfd410ac48fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f17d6f0b9a7654f44492119a93fba0d') in 0.022078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.354322 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_452.asset
+  artifactKey: Guid(ad5fb2a8d449c874dbccdc6de1d7fc3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_452.asset using Guid(ad5fb2a8d449c874dbccdc6de1d7fc3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75ca9da0f136e6ff911a9f8bc27cb36') in 0.022825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_456.asset
+  artifactKey: Guid(acead967e8cdf5744a6fc299ceb8a597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_456.asset using Guid(acead967e8cdf5744a6fc299ceb8a597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5ed10e313e18d3d8040321c42b2a53') in 0.026253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.546697 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_650.asset
+  artifactKey: Guid(23bac8c11155f89439e95895d5306e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_650.asset using Guid(23bac8c11155f89439e95895d5306e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acaa1ee9317daf7fde39cd9708b44edf') in 0.024405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_664.asset
+  artifactKey: Guid(dc22cf550b016df4cafac3e3b8957d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_664.asset using Guid(dc22cf550b016df4cafac3e3b8957d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c585ed6803a962f3b18264b775fb30') in 0.021534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_666.asset
+  artifactKey: Guid(62a3f203a6d49cc49b5f923dbd49d8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_666.asset using Guid(62a3f203a6d49cc49b5f923dbd49d8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496a4b0a1a2d2daa730dd42a7f9972f5') in 0.022200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_655.asset
+  artifactKey: Guid(3b42a81ac9538f64ebc051d07e363ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_655.asset using Guid(3b42a81ac9538f64ebc051d07e363ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04885b53ee99993cfffb5d1fd9a56196') in 0.021146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_656.asset
+  artifactKey: Guid(dc8cde0f195983041b610670dfa1d519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_656.asset using Guid(dc8cde0f195983041b610670dfa1d519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c252b019e78a7a2639245ecd5384a020') in 0.016502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.322551 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_668.asset
+  artifactKey: Guid(c0260065422f5c2418f283f537edb586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_668.asset using Guid(c0260065422f5c2418f283f537edb586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb3211c5a7f0522c419344525c24e64') in 0.027483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_688.asset
+  artifactKey: Guid(9d6b6cd5dd31614479853d2bfb803ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_688.asset using Guid(9d6b6cd5dd31614479853d2bfb803ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8697fded378783e6464402238092d49a') in 0.021480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_710.asset
+  artifactKey: Guid(799f7008ae7093b4280f4a2ac3299cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_710.asset using Guid(799f7008ae7093b4280f4a2ac3299cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8fea258d3a8e68b955af3abfcee5c7') in 0.024227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_719.asset
+  artifactKey: Guid(2fbbf0b75dd7fb4439efffe76ec396ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_719.asset using Guid(2fbbf0b75dd7fb4439efffe76ec396ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e27a2ccdae55dac0cfcb89bda050d5ee') in 0.019087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_732.asset
+  artifactKey: Guid(f4a42251a2a11f942b59cf1d9e7f7f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_732.asset using Guid(f4a42251a2a11f942b59cf1d9e7f7f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd898289e3303b6929c14e923f0d9965e') in 0.021332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_694.asset
+  artifactKey: Guid(f55e9aa099623ab46a9e29ede8c74269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_694.asset using Guid(f55e9aa099623ab46a9e29ede8c74269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2071c9d5d5c3e138fa2b8200054f728e') in 0.020059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_672.asset
+  artifactKey: Guid(c2da5d9bd3d6c7f4a806a80b565a1a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_672.asset using Guid(c2da5d9bd3d6c7f4a806a80b565a1a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb665d84763c996000e53e10bbdf2f8') in 0.023642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_704.asset
+  artifactKey: Guid(37186ed56c2e3a64194228fd88bbe03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_704.asset using Guid(37186ed56c2e3a64194228fd88bbe03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4fbbf5be3c772dd03886d25c3b8d72') in 0.021402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_745.asset
+  artifactKey: Guid(e83e19ecfcf72224e88401fe9b7401a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_745.asset using Guid(e83e19ecfcf72224e88401fe9b7401a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66c989eef7996f031432e175c9e5ffe') in 0.021872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_698.asset
+  artifactKey: Guid(d545d9b929298bb44b96fb7aa8cf19b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_698.asset using Guid(d545d9b929298bb44b96fb7aa8cf19b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456c622514f1f38e317e13f9493f4d46') in 0.020941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_746.asset
+  artifactKey: Guid(6e0f3462f3e18e44197f0b0b72ea12dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_746.asset using Guid(6e0f3462f3e18e44197f0b0b72ea12dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36244ff2e5ddc14884a96fa5c8b5b436') in 0.019576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_681.asset
+  artifactKey: Guid(2a615a7f239787d4ab282a60d54dcc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_681.asset using Guid(2a615a7f239787d4ab282a60d54dcc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40fb137f508bc0952efa5446530bb71') in 0.016447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_729.asset
+  artifactKey: Guid(6ca800e7c39a3cd4a9ce9a095851e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_729.asset using Guid(6ca800e7c39a3cd4a9ce9a095851e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807f8d570440e674e2573fbe0640c535') in 0.020088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_724.asset
+  artifactKey: Guid(557284b1f1c3e7140a30390aba96afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_724.asset using Guid(557284b1f1c3e7140a30390aba96afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f5706b1938247775758b54d643278a') in 0.017403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_757.asset
+  artifactKey: Guid(1ea89a270286aa347a806e2989e4b74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_757.asset using Guid(1ea89a270286aa347a806e2989e4b74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786f0665fa9118a216412e5ce120a3b4') in 0.019231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_691.asset
+  artifactKey: Guid(8c4c556e3dc76ac41bee95a8475bd556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_691.asset using Guid(8c4c556e3dc76ac41bee95a8475bd556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36c9725d00a60c873b32f48ddefed8c2') in 0.018566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_679.asset
+  artifactKey: Guid(52b3b8e3a8448fb4098d7620d0632040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_679.asset using Guid(52b3b8e3a8448fb4098d7620d0632040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '630f7b157e48ebd7e6565da2a0831e1e') in 0.019441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_731.asset
+  artifactKey: Guid(4027ed48b45acd44f88d06416638ce88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_731.asset using Guid(4027ed48b45acd44f88d06416638ce88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a55ab20fb28f43db55c49b0c54ee0c') in 0.018843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_684.asset
+  artifactKey: Guid(a7bc19c240ee19c46bb2ba6d12a335f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_684.asset using Guid(a7bc19c240ee19c46bb2ba6d12a335f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb38101c4e3f43520b4664a047a70934') in 0.019858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_685.asset
+  artifactKey: Guid(ba47feee73a23544d880e76bdeaf652d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_685.asset using Guid(ba47feee73a23544d880e76bdeaf652d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12dd4b6129347c18a3f314110abf4dc') in 0.019140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_755.asset
+  artifactKey: Guid(848284894a5bc8348a046234ae88e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_755.asset using Guid(848284894a5bc8348a046234ae88e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d299c4cec4a96e1cb3aa4af289922c6') in 0.020780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_711.asset
+  artifactKey: Guid(f7b2ead7103430445b3fa6a1d8d96e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_711.asset using Guid(f7b2ead7103430445b3fa6a1d8d96e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ae41e46e3bcae721834730651b17e4') in 0.018262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_671.asset
+  artifactKey: Guid(b34266cd503866547a65941a1d221dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Sprites/Pick Up's/coins-chests-etc-2-0_671.asset using Guid(b34266cd503866547a65941a1d221dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7776cc5f6ae8a47fa96a55e9db7e9c76') in 0.021572 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004242 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.823 seconds
+Domain Reload Profiling:
+	ReloadAssembly (823ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (632ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (196ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (290ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.04 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4404 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (1.3 MB). Loaded Objects now: 4927.
+Memory consumption went from 169.3 MB to 168.0 MB.
+Total: 2.868500 ms (FindLiveObjects: 0.267900 ms CreateObjectMapping: 0.146400 ms MarkObjects: 2.309500 ms  DeleteObjects: 0.143700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003952 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.810 seconds
+Domain Reload Profiling:
+	ReloadAssembly (811ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (629ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (291ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4404 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (1.3 MB). Loaded Objects now: 4942.
+Memory consumption went from 169.3 MB to 168.0 MB.
+Total: 2.243000 ms (FindLiveObjects: 0.230700 ms CreateObjectMapping: 0.125700 ms MarkObjects: 1.751800 ms  DeleteObjects: 0.134500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004569 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Domain Reload Profiling:
+	ReloadAssembly (760ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (583ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (180ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (265ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.82 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4404 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (1.3 MB). Loaded Objects now: 4957.
+Memory consumption went from 169.3 MB to 168.0 MB.
+Total: 2.557500 ms (FindLiveObjects: 0.262500 ms CreateObjectMapping: 0.134000 ms MarkObjects: 2.016200 ms  DeleteObjects: 0.144300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004456 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.725 seconds
+Domain Reload Profiling:
+	ReloadAssembly (725ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (548ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4404 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (1.3 MB). Loaded Objects now: 4972.
+Memory consumption went from 169.4 MB to 168.0 MB.
+Total: 2.400700 ms (FindLiveObjects: 0.225200 ms CreateObjectMapping: 0.120600 ms MarkObjects: 1.927200 ms  DeleteObjects: 0.126800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1282.324602 seconds.
+  path: Assets/Mike/Prefabs/Diamond.prefab
+  artifactKey: Guid(b018a2175ac8b74439b327fe6d8fc604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Prefabs/Diamond.prefab using Guid(b018a2175ac8b74439b327fe6d8fc604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c184bb53cfd5a7a484b2c7d0f5527ee') in 0.104574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mike/Prefabs/SilverCoin.prefab
+  artifactKey: Guid(270a85fead6b96044b80f93d1deda270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mike/Prefabs/SilverCoin.prefab using Guid(270a85fead6b96044b80f93d1deda270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748784ec1b27f708611e81a42792fdcf') in 0.017556 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004877 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\ScoreSpaceJam\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.863 seconds
+Domain Reload Profiling:
+	ReloadAssembly (863ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (673ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (199ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (325ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4404 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (1.3 MB). Loaded Objects now: 4994.
+Memory consumption went from 173.5 MB to 172.2 MB.
+Total: 2.613200 ms (FindLiveObjects: 0.264300 ms CreateObjectMapping: 0.156100 ms MarkObjects: 2.046900 ms  DeleteObjects: 0.145500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
